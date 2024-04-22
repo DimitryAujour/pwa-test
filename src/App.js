@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+import Navbar from './components/Navbar';
 import './App.css';
-
+import theme from './theme';
+import {ThemeProvider} from "@mui/material";
+import ProcedureGuide from './components/ProcedureGuide';
+import steps from './components/steps';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <ThemeProvider theme={theme}>
+            <div className="App">
+                <Navbar />
+                {/* Here you include the ProcedureGuide component and pass the steps to it */}
+                <ProcedureGuide steps={steps} />
+            </div>
+        </ThemeProvider>
+    );
 }
 
 export default App;
+
