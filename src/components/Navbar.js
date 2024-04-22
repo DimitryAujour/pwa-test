@@ -3,7 +3,6 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
 import Logo from './logo.png';
 import {auto} from "@popperjs/core"; // Ensure you have a logo.svg in your src folder or adjust the path accordingly.
 
